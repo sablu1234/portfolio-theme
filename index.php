@@ -94,10 +94,16 @@ else{
                 <div class="about__container bd-grid">
 
 <?php
+// $name= "hasan";
+// $cell= "0132046464";
+// $email= "mdjsj@gmil.com";
 
+// $personeinfo=array("hasan","0132046464","mdjsj@gmil.com");
+// foreach ($personeinfo as $value){
+//     echo $value. ' ';
+// }
 
-
-
+if(have_posts()):
 while(have_posts()): the_post();
 ?>
 <div class="about__img">
@@ -119,8 +125,9 @@ while(have_posts()): the_post();
  </div>
 <?php
 endwhile;
-
-
+else:
+    echo "post nai";
+endif;
 ?>
 
                    
