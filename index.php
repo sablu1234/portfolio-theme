@@ -20,12 +20,21 @@
                     <a href="#" class="nav__logo">Marlon</a>
                 </div>
 <?php
-$earn=800;
-if ($earn<500){
-    echo "He is a rich kit $earn";
+// $earn=800;
+// if ($earn<500){
+//     echo "He is a rich kit $earn";
+// }
+// ELSE{
+//     ECHO "HE IS A POOR HIS EARN $earn dollar per day";
+// }
+
+
+$name=5000;
+if($name<500){
+    echo "allah mohan $name";
 }
-ELSE{
-    ECHO "HE IS A POOR HIS EARN $earn dollar per day";
+else{
+    echo "hello sir";
 }
 
 
@@ -85,10 +94,23 @@ ELSE{
                 <div class="about__container bd-grid">
 
 <?php
-while ( have_posts() ) : the_post();
+
+
+
+
+while(have_posts()): the_post();
 ?>
 <div class="about__img">
-                        <img src="<?php echo get_parent_theme_file_uri('assets/img/about.jpg')?>" alt="">
+    <?php 
+    if(has_post_thumbnail()){
+        the_post_thumbnail();
+    }
+    else{
+        ?>
+        <img src="<?php echo get_parent_theme_file_uri('assets/img/about.jpg')?>" alt="">
+        <?php
+    }
+    ?>
                         <?php the_title()?>
                         <?php the_content()?>
                         <?php the_time()?>
@@ -97,6 +119,7 @@ while ( have_posts() ) : the_post();
  </div>
 <?php
 endwhile;
+
 
 ?>
 
