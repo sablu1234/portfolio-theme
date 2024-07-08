@@ -103,6 +103,14 @@ else{
 //     echo $value. ' ';
 // }
 
+
+// $info=array('d',56464,'hadi jamna');
+// echo count($info);
+// echo $info[2];
+
+
+
+
 if(have_posts()):
 while(have_posts()): the_post();
 ?>
