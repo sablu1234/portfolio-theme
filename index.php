@@ -109,6 +109,23 @@ else{
 // echo $info[2];
 
 
+// $stdentinfo=array(
+//     'key'=>'value',
+//     'name'=>'hadi jamna',
+//     'childinfo'=>array(
+//         'c_name'=>'rowza',
+//     ),
+// );
+// var_dump ($stdentinfo);
+// echo $stdentinfo['childinfo']['c_name'];
+
+// $slno=0;
+// for($taka=10000;$taka>500;$taka-=1000){
+//     echo $taka.'<br>';
+//     $slno++;
+// }
+// echo $slno;
+
 
 
 if(have_posts()):
