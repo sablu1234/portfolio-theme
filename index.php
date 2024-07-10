@@ -123,8 +123,14 @@ else{
 // for($taka=10000;$taka>500;$taka-=1000){
 //     echo $taka.'<br>';
 //     $slno++;
+//     echo $slno;
 // }
-// echo $slno;
+
+$taka=10000;
+while($taka>500){
+    $taka-=1000;
+    echo $taka;
+}
 
 
 
